@@ -18,12 +18,10 @@
     margin: 0;
     padding: 0;
 }
-body{
-    max-width: 1110px;
-}
 .div-header{
     display: flex;
     align-items: center;
+    padding-left: 15%;
 }
 .nav-header{
     justify-content: center;
@@ -35,14 +33,14 @@ body{
 }
 .logo-1{
     font-family: Courgette;
-    font-size: 32xp;
+    font-size: 32px;
     line-height: 40px;
     color: rgba(98, 191, 173, 1);
     margin-left: 50px;
 }
 .logo-2{
     font-family: Roboto;
-    font-size: 32xp;
+    font-size: 32px;
     line-height: 37.5px;
     color: rgba(0, 0, 0, 1);
 }
@@ -55,6 +53,9 @@ body{
 }
 .for-sec{
     margin: 40px;
+    max-width: 70%;
+    padding-left: 15%;
+    border: 2px solid rgba(229, 229, 229, 1)
 }
 .hero{
     color: rgba(255, 255, 255, 1);
@@ -96,23 +97,25 @@ body{
     text-align: left;    
 }
 .img-in-about{
-    width: 555px;
-    height: 348px;
+    width: 200%;
+    height: 200%;
     top: 226px;
 }
 .div-for-features{
     display: flex;
-    background: rgba(229, 229, 229, 1);
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(229, 229, 229, 1);
     align-items: center;
-
+    padding-left: 12%;
+    gap: 50px;
 }
 .card{
     border: 2px solid rgba(229, 229, 229, 1);
-    padding: 35px;
+    padding: 24px;
 }
 .card_img{
-    width: 274px;
-    height: 156px;
+    width: 100%;
+    height: 100%;
     top: 856px;
     left: 257px;
 }
@@ -143,6 +146,8 @@ letter-spacing: 0em;
 text-align: left;
 color: rgba(213, 32, 71, 1);
 padding-top: 20px;
+text-decoration: underline;
+
 }
 .text-for-footer{
     font-family: Lato;
@@ -154,6 +159,7 @@ text-align: left;
 text-align: center;
 }
 .footer-div{
+    background: rgba(249, 247, 232, 1);
     display: flex;
     justify-content: center;
 }
