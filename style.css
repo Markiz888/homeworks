@@ -1,0 +1,30 @@
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  border: 5px outset black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 20px;
+  color: white;
+}
+.cat-img {
+  height: 300px;
+  width: auto;
+}
+.cat-div {
+  display: grid;
+  justify-content: center;
+}
+.btn-div {
+  text-align: center;
+}
+.cat-ul{
+    text-align: left;
+}
+.is-active {
+  background-color: orangered;
+}
+.btn {
+  background-color: gray;
+}
