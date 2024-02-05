@@ -19,27 +19,20 @@ function second(a) {
     }
 }
 
-function third(a) {
-    b = 0
-    for (let i = 0; i < a.length; i++) {
-           b += a[i]
-        }   
+function third(a) { 
+    b = a.reduce((accumulator, currentValue) => accumulator + currentValue) 
     console.log(b / a.length);
 }
-function fourth(a) {
-    b = 0
-    for (let i = 0; i < a.length; i++) {
-        b += a[i].length
-    }
+
+
+function fourth(a) { 
+    b = a.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0)
     console.log(b);
 }
+
+
 function fifth(a) {
-    b = []
-    for (let i = 0; i < a.length; i++) {
-        if (typeof a[i] == 'string') {
-            b.push(a[i])
-        }
-    }
+    const b = a.filter((c) => typeof(c) == 'string');
     console.log(b);
 }
 
