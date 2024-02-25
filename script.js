@@ -17,8 +17,18 @@ class Cat {
     }
   }
 
-  is_sleep() {
-    this.status = !this.status;
+  go_sleep() {
+    if (this.status == false){
+      this.status = !this.status;
+      console.log('Лег спать');
+  }
+}
+
+  wake_up() {
+    if (this.status == true){
+      this.status = !this.status;
+      console.log('Проснулся');
+    }
   }
 }
 
@@ -26,31 +36,34 @@ const cat1 = new Cat("cat1.jpg", "нету", 7, "муха", "male", "рыжий"
 const cat2 = new Cat("cat2.jpg","Британский", 10,"Блохастый","male","серый",true);
 const cat3 = new Cat("cat3.png", "Шаурма", 5, "Шаурма", "male", "серый", true);
 
-function change(a, b) {
+a = [cat1, cat2, cat3]
+
+let change = function(event) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] == 'status') {
-        if (a[arr[i]]) {
+        if (a[event.target.value-1][arr[i]]) {
             document.getElementById(arr[i]).textContent = 'Статус: спит';
         
         } else {
             document.getElementById(arr[i]).textContent = 'Статус: не спит';
         }
     } else if (arr[i] == 'img'){
-        document.getElementById(arr[i]).src = `img/${a[arr[i]]}`;
+        document.getElementById(arr[i]).src = `img/${a[event.target.value-1][arr[i]]}`;
         document.getElementById(arr[i]).className = 'cat-img'
     } else {
-        document.getElementById(arr[i]).textContent = arr2[i]+ a[arr[i]];
+        document.getElementById(arr[i]).textContent = arr2[i]+ a[event.target.value-1][arr[i]];
     }
   }
-  document.getElementById(b).className = 'is-active';
-  if (b == 'btn1') {
-    document.getElementById('btn2').className = 'btn'
-    document.getElementById('btn3').className = 'btn'
-  } else if(b == 'btn2'){
-    document.getElementById('btn1').className = 'btn'
-    document.getElementById('btn3').className = 'btn'
-  } else{
-    document.getElementById('btn2').className = 'btn'
-    document.getElementById('btn1').className = 'btn'
+  for (let i = 0; i < 3; i++) {
+    if (i == event.target.value-1) {
+      event.target.className = ('is-active')
+    }
+    else{
+      c = document.getElementById(`btn${i+1}`)
+      c.className= ('btn')
+    }
   }
 }
+
+
+addEventListener('click', change)
