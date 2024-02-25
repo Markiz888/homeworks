@@ -1,0 +1,13 @@
+.animated {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    position: relative;
+}
+.change{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: black;
+    opacity: 0%
+}
