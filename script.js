@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let is_active = false
+  let is_active = false
   $("#btn1").click(function (e) {
     $(".animated")
       .animate({
@@ -35,7 +35,21 @@ $(document).ready(function () {
 
 
 
-  $("#btn3").click(function (e) { 
-    $(".animated").toggleClass('change');
+  $("#btn3").click(function () { 
+    if (is_active == false) {
+      $("[class=animated]").css({
+        height: 400,
+        width: 400,
+        opacity: 0
+      });
+    } else{
+      console.log("dsf");
+      $("[class=animated]").css({
+        height: 200,
+        width: 200,
+        opacity: 100
+      });
+    }
+    is_active = !is_active;
   });
 });
