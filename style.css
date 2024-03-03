@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, serif;
+    font-size: 14pt;
+    color: red;
+    background-color: black;
+}
+
+
+section {
+    display: flex;
+}
+
+h1 {
+    font-size: 36pt;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+article {
+    padding: 10px;
+    flex: 1 200px;
+    color: red;
+}
+
+img {
+    border: ridge 5px white;
+    width: 70%;
+}
+
+footer {
+    background-position: 2%;
+    color: red;
+    text-align: center;
+    font-style: italic;
+}
+
+.x {
+    background-color: black;
+    text-align: justify;
+    flex-basis: 16.66%;
+}
+
+.y {
+    background-color: black;
+    flex-basis: 33.33%;
+}
+
+.z {
+    background-color: black;
+    flex-basis: 33.33%;
+}
+@media screen and (max-width: 600px) {
+    footer, h1, article {
+        font-size: 80%;
+        font-family: "Calibri";
+        color: #631407;
+        font-weight: bolder;
+    }
+    section { flex-direction: column}
+
+}
