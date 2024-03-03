@@ -24,6 +24,7 @@ article {
     padding: 10px;
     flex: 1 200px;
     color: red;
+    order: 1;
 }
 
 img {
