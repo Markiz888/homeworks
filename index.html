@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/canva_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Canvas</title>
+</head>
+<body>
+    <div class="flex">
+        <label for="color">Цвет:</label>
+        <input type="color" name="color" id="color">
+        <label for="a">Прозрачность:</label>
+        <input type="number" name="a" id="a">
+    </div>
+    <div class="container flex justify-content items-center">
+        <canvas id="myCanvas" width="500" height="300">
+            Ваш браузер не підтримує Canvas
+        </canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
