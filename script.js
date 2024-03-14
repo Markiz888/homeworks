@@ -16,8 +16,6 @@ canvas.addEventListener("mousedown", function (e) {
 
   ctx.beginPath();
 
-  ctx.lineTo(mouseCoords.x, mouseCoords.y);
-  console.log("aaa");
   ctx.stroke();
 });
 
